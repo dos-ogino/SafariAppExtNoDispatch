@@ -11,7 +11,38 @@
 		88C47BCB22DD65070030DAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C47BCA22DD65070030DAC2 /* Assets.xcassets */; };
 		88C47BCE22DD65070030DAC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C47BCC22DD65070030DAC2 /* MainMenu.xib */; };
 		88C47BD122DD65070030DAC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C47BD022DD65070030DAC2 /* main.m */; };
+		88C47BDF22DD65290030DAC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C47BDE22DD65290030DAC2 /* Cocoa.framework */; };
+		88C47BE322DD65290030DAC2 /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C47BE222DD65290030DAC2 /* SafariExtensionHandler.m */; };
+		88C47BE622DD65290030DAC2 /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C47BE522DD65290030DAC2 /* SafariExtensionViewController.m */; };
+		88C47BE922DD65290030DAC2 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C47BE722DD65290030DAC2 /* SafariExtensionViewController.xib */; };
+		88C47BEC22DD65290030DAC2 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 88C47BEB22DD65290030DAC2 /* script.js */; };
+		88C47BEE22DD65290030DAC2 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 88C47BED22DD65290030DAC2 /* ToolbarItemIcon.pdf */; };
+		88C47BF222DD65290030DAC2 /* MyExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 88C47BDC22DD65290030DAC2 /* MyExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88C47BF022DD65290030DAC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88C47BBC22DD65070030DAC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88C47BDB22DD65290030DAC2;
+			remoteInfo = MyExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88C47BF622DD65290030DAC2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				88C47BF222DD65290030DAC2 /* MyExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		88C47BC422DD65070030DAC2 /* SafariAppExtNoDispatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariAppExtNoDispatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +53,17 @@
 		88C47BCF22DD65070030DAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88C47BD022DD65070030DAC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88C47BD222DD65070030DAC2 /* SafariAppExtNoDispatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariAppExtNoDispatch.entitlements; sourceTree = "<group>"; };
+		88C47BDC22DD65290030DAC2 /* MyExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C47BDE22DD65290030DAC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		88C47BE122DD65290030DAC2 /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
+		88C47BE222DD65290030DAC2 /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
+		88C47BE422DD65290030DAC2 /* SafariExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
+		88C47BE522DD65290030DAC2 /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
+		88C47BE822DD65290030DAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		88C47BEA22DD65290030DAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88C47BEB22DD65290030DAC2 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		88C47BED22DD65290030DAC2 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		88C47BEF22DD65290030DAC2 /* MyExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +74,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88C47BD922DD65290030DAC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C47BDF22DD65290030DAC2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				88C47BC622DD65070030DAC2 /* SafariAppExtNoDispatch */,
+				88C47BE022DD65290030DAC2 /* MyExtension */,
+				88C47BDD22DD65290030DAC2 /* Frameworks */,
 				88C47BC522DD65070030DAC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				88C47BC422DD65070030DAC2 /* SafariAppExtNoDispatch.app */,
+				88C47BDC22DD65290030DAC2 /* MyExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +118,30 @@
 			path = SafariAppExtNoDispatch;
 			sourceTree = "<group>";
 		};
+		88C47BDD22DD65290030DAC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88C47BDE22DD65290030DAC2 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88C47BE022DD65290030DAC2 /* MyExtension */ = {
+			isa = PBXGroup;
+			children = (
+				88C47BE122DD65290030DAC2 /* SafariExtensionHandler.h */,
+				88C47BE222DD65290030DAC2 /* SafariExtensionHandler.m */,
+				88C47BE422DD65290030DAC2 /* SafariExtensionViewController.h */,
+				88C47BE522DD65290030DAC2 /* SafariExtensionViewController.m */,
+				88C47BE722DD65290030DAC2 /* SafariExtensionViewController.xib */,
+				88C47BEA22DD65290030DAC2 /* Info.plist */,
+				88C47BEB22DD65290030DAC2 /* script.js */,
+				88C47BED22DD65290030DAC2 /* ToolbarItemIcon.pdf */,
+				88C47BEF22DD65290030DAC2 /* MyExtension.entitlements */,
+			);
+			path = MyExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -75,15 +152,34 @@
 				88C47BC022DD65070030DAC2 /* Sources */,
 				88C47BC122DD65070030DAC2 /* Frameworks */,
 				88C47BC222DD65070030DAC2 /* Resources */,
+				88C47BF622DD65290030DAC2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				88C47BF122DD65290030DAC2 /* PBXTargetDependency */,
 			);
 			name = SafariAppExtNoDispatch;
 			productName = SafariAppExtNoDispatch;
 			productReference = 88C47BC422DD65070030DAC2 /* SafariAppExtNoDispatch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		88C47BDB22DD65290030DAC2 /* MyExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88C47BF322DD65290030DAC2 /* Build configuration list for PBXNativeTarget "MyExtension" */;
+			buildPhases = (
+				88C47BD822DD65290030DAC2 /* Sources */,
+				88C47BD922DD65290030DAC2 /* Frameworks */,
+				88C47BDA22DD65290030DAC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyExtension;
+			productName = MyExtension;
+			productReference = 88C47BDC22DD65290030DAC2 /* MyExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +192,14 @@
 				TargetAttributes = {
 					88C47BC322DD65070030DAC2 = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					88C47BDB22DD65290030DAC2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -113,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				88C47BC322DD65070030DAC2 /* SafariAppExtNoDispatch */,
+				88C47BDB22DD65290030DAC2 /* MyExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +229,16 @@
 			files = (
 				88C47BCB22DD65070030DAC2 /* Assets.xcassets in Resources */,
 				88C47BCE22DD65070030DAC2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88C47BDA22DD65290030DAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C47BEE22DD65290030DAC2 /* ToolbarItemIcon.pdf in Resources */,
+				88C47BE922DD65290030DAC2 /* SafariExtensionViewController.xib in Resources */,
+				88C47BEC22DD65290030DAC2 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +254,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88C47BD822DD65290030DAC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C47BE622DD65290030DAC2 /* SafariExtensionViewController.m in Sources */,
+				88C47BE322DD65290030DAC2 /* SafariExtensionHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88C47BF122DD65290030DAC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88C47BDB22DD65290030DAC2 /* MyExtension */;
+			targetProxy = 88C47BF022DD65290030DAC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		88C47BCC22DD65070030DAC2 /* MainMenu.xib */ = {
@@ -148,6 +280,14 @@
 				88C47BCD22DD65070030DAC2 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		88C47BE722DD65290030DAC2 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88C47BE822DD65290030DAC2 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +440,42 @@
 			};
 			name = Release;
 		};
+		88C47BF422DD65290030DAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyExtension/MyExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZNG7LE228;
+				INFOPLIST_FILE = MyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.dos-osaka.SafariAppExtNoDispatch.MyExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		88C47BF522DD65290030DAC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyExtension/MyExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZNG7LE228;
+				INFOPLIST_FILE = MyExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.dos-osaka.SafariAppExtNoDispatch.MyExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +493,15 @@
 			buildConfigurations = (
 				88C47BD622DD65070030DAC2 /* Debug */,
 				88C47BD722DD65070030DAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88C47BF322DD65290030DAC2 /* Build configuration list for PBXNativeTarget "MyExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88C47BF422DD65290030DAC2 /* Debug */,
+				88C47BF522DD65290030DAC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

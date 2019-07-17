@@ -1,6 +1,6 @@
 //
-//  AppDelegate.m
-//  
+//  SafariExtensionViewController.h
+//  MyExtension
 //  
 //  Created by ogino on 2019/07/16
 //  Copyright © 2019 SS1. All rights reserved.
@@ -13,25 +13,10 @@
 // *********************************************************************************************************************************
 //
 
-#import "AppDelegate.h"
+#import <SafariServices/SafariServices.h>
 
-@interface AppDelegate ()
+@interface SafariExtensionViewController : SFSafariExtensionViewController
 
-@property (weak) IBOutlet NSWindow *window;
-@end
-
-@implementation AppDelegate
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-}
-
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
-}
-- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
-    return YES;
-}
++ (SafariExtensionViewController *)sharedController;
 
 @end
