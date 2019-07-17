@@ -11,13 +11,6 @@ if (window.top === window) {
     safari.self.addEventListener('message', hanedleReceivedMessage, false);
 
     function hanedleReceivedMessage(evt) {
-        console.log("Message received from Extension handler,");
-        let response = evt.message;
-        if (response.res) {
-            console.log("Response: [" + response.res +"]");
-        }
-        if (response.err) {
-            console.log("err: " + response.err);
-        }
+        console.log("Message received from Extension handler");
     }
 }
