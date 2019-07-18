@@ -39,7 +39,8 @@
             }
         }
         
-        NSDictionary *dic = @{@"res": jsonData };
+        NSDictionary *dic = @{@"res": jsonData };  // add JSON data
+//        NSDictionary *dic = @{@"res": resDic };  // add NSDictionary data
         NSLog(@"[%@ %@] dic%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), dic);
         [page dispatchMessageToScriptWithName:@"message" userInfo:dic];
 }

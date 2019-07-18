@@ -1,9 +1,9 @@
 'use strict';
 
 if (window.top === window) {
-    const html = document.getElementsByTagName("HTML");
-    console.log("stat to send message by using safari.extension.dispatchMessage:[" + location.href + "]");
     document.addEventListener("DOMContentLoaded", function(event) {
+                              const html = document.getElementsByTagName("HTML");
+                              console.log("stat to send message by using safari.extension.dispatchMessage:[" + location.href + "]");
                               safari.extension.dispatchMessage("message",
                                                                {BodyRaw: html[0].innerHTML});
                               });
